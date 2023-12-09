@@ -1,0 +1,93 @@
+{
+    "header": {
+        "name": "Jaimito",
+        "lastname": "Pérez",
+        "age": 26,
+        "workPosition": "DESARROLLADOR"
+    },
+    "payload": [
+        {
+            "bankAccount": "0000000001",
+            "creationDateAccount": "2020-08-07T00:00:00",
+            "transactions": [
+                {
+                    "numTrx": 1,
+                    "bankAccountOrigin": "0000000006",
+                    "bankAccountDestiny": "0000000001",
+                    "description": "Apertura de cuenta",
+                    "date": "2020-08-07T00:00:00",
+                    "amount": 10000.0,
+                    "iva": 0.0,
+                    "commission": 0.0,
+                    "type": "DEBIT"
+                },
+                {
+                    "numTrx": 6,
+                    "bankAccountOrigin": "0000000001",
+                    "bankAccountDestiny": "0000000002",
+                    "description": "Pago por servicios",
+                    "date": "2020-08-12T00:00:00",
+                    "amount": 500.0,
+                    "iva": 0.0,
+                    "commission": 0.0,
+                    "type": "DEBIT"
+                },
+                {
+                    "numTrx": 10,
+                    "bankAccountOrigin": "0000000005",
+                    "bankAccountDestiny": "0000000001",
+                    "description": "Pago por servicios",
+                    "date": "2020-08-16T00:00:00",
+                    "amount": 600.0,
+                    "iva": 0.0,
+                    "commission": 0.0,
+                    "type": "DEBIT"
+                },
+                {
+                    "numTrx": 13,
+                    "bankAccountOrigin": "0000000003",
+                    "bankAccountDestiny": "0000000001",
+                    "description": "Salario",
+                    "date": "2020-08-19T00:00:00",
+                    "amount": 1500.0,
+                    "iva": 0.0,
+                    "commission": 0.0,
+                    "type": "DEBIT"
+                },
+                {
+                    "numTrx": 14,
+                    "bankAccountOrigin": "0000000001",
+                    "bankAccountDestiny": "0000000004",
+                    "description": "Compra Online",
+                    "date": "2020-08-20T00:00:00",
+                    "amount": 10.0,
+                    "iva": 0.0,
+                    "commission": 0.0,
+                    "type": "CREDIT"
+                },
+                {
+                    "numTrx": 16,
+                    "bankAccountOrigin": "0000000001",
+                    "bankAccountDestiny": "0000000006",
+                    "description": "Transferencia a otro banco",
+                    "date": "2020-08-21T00:00:00",
+                    "amount": 12.0,
+                    "iva": 0.36,
+                    "commission": 0.4,
+                    "type": "CREDIT"
+                },
+                {
+                    "numTrx": 17,
+                    "bankAccountOrigin": "0000000003",
+                    "bankAccountDestiny": "0000000001",
+                    "description": "Ahorro",
+                    "date": "2020-08-22T00:00:00",
+                    "amount": 80.0,
+                    "iva": 0.0,
+                    "commission": 0.0,
+                    "type": "CREDIT"
+                }
+            ]
+        }
+    ]
+}

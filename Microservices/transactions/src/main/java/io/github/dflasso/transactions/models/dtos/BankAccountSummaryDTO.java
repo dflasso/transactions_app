@@ -31,14 +31,14 @@ public class BankAccountSummaryDTO {
             Set<TransactionEntity> trxs = bankAccountEntity.getTrxsAccredited();
 
             if(!trxs.isEmpty()){
-                transactions.addAll(TransactionDTO.buildFromTransactionEntity(trxs));
+                transactions.addAll(TransactionDTO.buildFromTransactionEntity(trxs, bankAccountEntity.getAccount_number()));
                 trxs.clear();
             }
 
             trxs = bankAccountEntity.getTrxsDebited();
 
             if(!trxs.isEmpty()){
-                transactions.addAll(TransactionDTO.buildFromTransactionEntity(trxs));
+                transactions.addAll(TransactionDTO.buildFromTransactionEntity(trxs, bankAccountEntity.getAccount_number()));
                 trxs.clear();
             }
 

@@ -16,6 +16,7 @@ import java.util.Set;
 @Tag(name = "Transaction")
 @RestController
 @RequestMapping("/transactions")
+@CrossOrigin("*")
 public class TransactionController {
 
     @Autowired
