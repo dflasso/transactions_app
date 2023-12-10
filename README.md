@@ -9,14 +9,52 @@ Desarrollar una solución para obtener las transacciones según el código y tip
  - :white_check_mark: Modelado de datos - [see tables](./docs/model-DB.pdf)
  - :white_check_mark: Crear scripts de inserción  - [see script](./Microservices/transactions/src/main/resources/data.sql)
  - :white_check_mark: Exponer una API para obtener los datos de las transacciones según el código y tipo de persona - [see API](./assets/Backend-Swagger.png)
- - :white_check_mark: Crear una aplicación web con angular - [see video]()
+ - :white_check_mark: Crear una aplicación web con angular - [see video](https://drive.google.com/file/d/1ULq_0l6uE1bN7HGadInozpzwYgdp6LHw/view?usp=sharing)
  - :white_check_mark: Consumir API desde la aplicación web
 
+### Get Starting
+
+#### Prerequistos
+    - node 18
+    - JDK 17
+    - maven
+
+Pasos:
+    
+- Lavantar microservicios del autorizador, abrir el proyecto `./Microservices/authentication` y ejecutar:
+    
+```bash
+$ mvn install 
+$ mvn spring-boot:run
+```
+
+- Lavantar microservicios de transacciones, abrir el proyecto `./Microservices/transactions` y ejecutar:
+    
+```bash
+$ mvn install 
+$ mvn spring-boot:run
+```
+
+- Levantar aplicación web `./Web Application/spa-transactions-app`
+
+```bash
+$ npm i
+$ npm run start
+```
+
+ ## Stack of tecnologies
+  - Backend
+    + Sping Boot 3
+    + Spring Security
+    + Spring JPA
+    + lombok
+  - Frontend
+    + Angular 17
+    + rxjs 
+    + Tailwind
+
  ## Extra Points
-
-- [Live Demo - App Web]()
-- [Live Demo - Backend]()
-
+ 
  ### Seguridades Backend
  - Solo API de login es pública, el resto requiere de un JWT. Los microservicios ademas de verificar el jwt, comprueban que el ROL pueda consumir la API
  - Las contraseñas se encuentran encriptadas con bcrypt
